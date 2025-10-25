@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --color-light-background: #ffffff;
+  --color-light-text: #000000;
+  --color-light-primary: #f9fafb;
+  --color-light-secondary: #f3f4f6;
+  --color-light-sidebar: #e5e7eb;
+  --color-light-accent: #ef4444;
+  --color-light-accent-dark: #c82333;
+  --color-light-button: #3b82f6;
+  --color-light-input: #ffffff;
+  --color-light-active: #d1d5db;
+
+  --color-dark-background: #1f2937;
+  --color-dark-text: #f9fafb;
+  --color-dark-primary: #242931;
+  --color-dark-secondary: #2c323a;
+  --color-dark-sidebar: #2c323a;
+  --color-dark-accent: #ef4444;
+  --color-dark-accent-dark: #c82333;
+  --color-dark-button: #3b82f6;
+  --color-dark-input: #4a5568;
+  --color-dark-active: #3b424c;
+}
+
+@layer base {
+  :root {
+    --background: var(--color-light-background);
+    --text: var(--color-light-text);
+    --primary: var(--color-light-primary);
+    --secondary: var(--color-light-secondary);
+    --sidebar: var(--color-light-sidebar);
+    --accent: var(--color-light-accent);
+    --accent-dark: var(--color-light-accent-dark);
+    --button: var(--color-light-button);
+    --input: var(--color-light-input);
+    --active: var(--color-light-active);
+  }
+
+  [data-theme="dark"] {
+    --background: var(--color-dark-background);
+    --text: var(--color-dark-text);
+    --primary: var(--color-dark-primary);
+    --secondary: var(--color-dark-secondary);
+    --sidebar: var(--color-dark-sidebar);
+    --accent: var(--color-dark-accent);
+    --accent-dark: var(--color-dark-accent-dark);
+    --button: var(--color-dark-button);
+    --input: var(--color-dark-input);
+    --active: var(--color-dark-active);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text);
+  }
+}

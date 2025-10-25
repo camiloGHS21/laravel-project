@@ -1,0 +1,5 @@
+GEMINI.md
+/node_modules
+.specify
+.gemini/commands
+.vite/build
